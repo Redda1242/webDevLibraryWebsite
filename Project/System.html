@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library</title>
+<link rel="stylesheet" href="Assets/Style.css">
+<link rel="icon" type="image/x-icon" href="Assets/Photos/favicon.ico">
+</head>
+<body>
+<header>
+<div class="NavBar">
+<ul>
+	<li><a href="Search.php" > Search books by Title/Author</a></li>
+	<li><a href="SearchCategory.php">Search books by category</a></li>
+	<li><a href="View.php">View Reserved books</a> </li>
+	<a href="Index.html"><img id="icon2" src="Assets/Photos/logout.png"></a>
+  
+</ul>
+</div>
+<a href="System.html"><img id="icon" src="Assets/Photos/icon.png" alt="icon"> </a>
+
+<h1>Library System</h1>
+
+<br>
+</header>
+<?php
+//Start session
+include('Session.php');
+echo "Hello ",$_SESSION["account"];
+?>
+<br>
+<div class="conatiner">
+<a href="Search.php" > <div class = "service"> <img class="images" src="Assets/Photos/img1.jpg"> Search books by Title/Author</div></a>
+<a href="SearchCategory.php"><div class = "service"> <img class="images" src="Assets/Photos/img2.jpg">Search books by category</div></a>
+<a href="View.php"><div class = "service"><img class="images" src="Assets/Photos/img3.jpg">View Reserved books</div></a> 
+
+
+</div>
+
+<footer>
+  <p>Author: Raghd Al Juma 2021</p>
+</footer>
+</body>
+</html>
+
+
+

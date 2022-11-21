@@ -1,0 +1,34 @@
+<?php
+	//Start session and unset account.
+	session_start();   
+	unset($_SESSION["account"]);
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library</title>
+<link rel="stylesheet" href="Assets/Style.css">
+<link rel="icon" type="image/x-icon" href="Assets/Photos/favicon.ico">
+</head>
+<body>
+<header>
+<a href="Index.html"><img id="icon" src="Assets/Photos/icon.png" alt="icon"> </a>
+<h1>Library System</h1>
+<div id="navbar">
+<ul>
+  <li><a href="Login.php" >Login</a></li>
+  <li><a href="Register.php">Register</a></li>
+</ul>
+</div>
+<br>
+</header>
+<br>
+<div id="banner">
+<img src="Assets/Photos/background.jpg" alt="image">
+</div>
+
+<footer>
+  <p>Author: Raghd Al Juma 2021</p>
+</footer>
+</body>
+</html>
